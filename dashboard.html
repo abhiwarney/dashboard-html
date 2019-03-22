@@ -1,0 +1,191 @@
+	<html>
+		<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>dashboard</title>
+			<style>
+				body{
+					width:100%;
+					height:100%;
+					margin:0;
+					padding:0;
+					}
+				.document-container{
+					position:relative;
+					display:flex;
+					flex-direction:column;
+					width:100%;
+					margin:0;
+					padding:0;
+					background-color:#F0F8FF;
+					z-index:0;
+					}
+				.header-container{
+					position:fixed;
+					display:flex;
+					flex-direction:row;
+					justify-content:flex-start;
+					align-items:center;
+					align-content:center;
+					width:100%;
+					border:1px solid black;
+					background-color:#333;
+					color:white;
+					}
+				.hdr-left-cont{
+					position:relative;
+					width:10%;
+					margin-left:150px;
+								
+					}
+				.hdr-right-cont{
+					position:relative;
+					display:flex;
+					flex-direction:row;
+					align-items:center;
+					align-content:center;
+					height:100%;
+					padding-left:200px;					
+					}
+				.searchbox-container{
+					margin-left:0;
+					position:relative;
+					display:flex;
+					flex-direction:row;
+					align-items:center;
+					align-content:center;
+					height:100%;
+					padding-top:15px;
+					}
+				.searchbar{
+					width:400px;
+					height:30px;
+					border:2px white solid;
+					border-radius:4px;
+					}
+				.search-button{
+					width:100px;
+					height:30px;
+					margin-left:10px;
+					border:2px white solid;
+					border-radius:4px;
+					}
+				.search-button:hover{
+					border:2px solid black;
+					cursor: grab;
+					}
+				.profile-functions-container{
+					
+					padding-left:300px;
+					float:right;
+					}
+				.profile-functions-container a:link {
+					text-decoration: none;
+					font-size:16px;
+					color: white;
+					}
+
+					/* visited link */
+				.profile-functions-container a:visited {
+					  color: #00FF00;
+					}
+
+					/* mouse over link */
+				.profile-functions-container a:hover {
+					  color: white;
+					}
+
+					/* selected link */
+				.profile-functions-container a:active {
+					  color: red;
+					}
+				.logout{
+					padding-left:100px;
+					}
+				.logout a{
+					padding:4px;
+					border:2px solid white;
+					border-radius:4px;
+					
+					}
+				.body-container{
+					position:relative;
+					display:flex;
+					flex-direction:row;
+					margin-left:150px;
+					margin-right:150px;
+					height:100%;
+					background-color:white;
+					box-shadow: 10px 10px 5px grey;
+					z-index:-1;
+					}	
+				.left-nav-container{
+					position:relative;
+					display:flex;
+					flex-direction:column;
+					width:20%;
+					border-left:1px solid black;
+					border-right:1px solid black;
+					}	
+				.middle-wall-container{
+					position:relative;
+					display:flex;
+					flex-direction:column;
+					width:50%;
+				}	
+				.right-active-user-container{
+					position:relative;
+					display:flex;
+					flex-direction:column;
+					width:30%;
+					border-left:1px solid black;
+					border-right:1px solid black;
+					}	
+			</style>
+		</head>
+		<body>
+			<div class="document-container">
+				<div class="header-container">
+					<div class="hdr-left-cont">
+						<h2>Capbook</h2>
+					</div>
+					<div class="hdr-right-cont">
+						<div class="searchbox-container">
+							<form name="searchBoxForm" action=# method="post">
+								<table>
+									<tr>
+										<td>
+											<input class="searchbar" type="text" name="searchKeyword" placeholder="enter username to search">
+										</td>
+										<td>
+											<input class="search-button" type="submit" value="search">
+										</td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div class="profile-functions-container">
+							<table>
+								<tr>
+									<td><a href=#>Home</a></td>
+									<td><a href=#>Mesages</a></td>
+									<td><a href=#>Notification</a></td>
+									<td><a href=#>Settings</a></td>
+									<td class="logout"><a href=#>Logout</a></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="body-container">
+					<div class="left-nav-container">
+					</div>
+					<div class="middle-wall-container">
+					</div>
+					<div class="right-active-user-container">
+					</div>
+				</div>
+				<div class="footer-container">
+				</div>
+			</div>
+		</body>
+	</html>
